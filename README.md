@@ -26,4 +26,10 @@ unsign_sign.c
 ```
 ![unsign](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/817ccbd8-79a1-4fa7-b45d-a1b5a5b0f722)
 
+## Day - 2
+### Simulate a C program using ABI function call (using registers) and execute
+![DAy2_1](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/53ae4c51-715c-45ba-bc4e-46220b187f76)
+![DAY2_2](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/700d7efe-a7b0-48a9-94fb-cd7200f3eef1)
+
+
 
