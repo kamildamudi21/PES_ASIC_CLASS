@@ -1,11 +1,18 @@
+
 # PES_ASIC_CLASS
-## Day - 1
+
+<details>
+  <summary> Week 1 : Day 1 - Introduction to RISCV ISA and GNU Compiler Toolchain </summary>
+  <br>
+  
 ### C program for Sum 1 to N.
+
 #### Compiling it using C compiler.
 
 ![WhatsApp Image 2023-08-21 at 13 50 19](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/b3f87d49-77e7-47c5-a5ca-17116cad44a9)
 
 #### Compiling using RISC-V Compiler.
+
 ```
 riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 spike pk sum1ton.o
@@ -25,11 +32,95 @@ spike -d pk sum1ton.o
 unsign_sign.c
 ```
 ![unsign](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/817ccbd8-79a1-4fa7-b45d-a1b5a5b0f722)
+</details>
 
-## Day - 2
+<details>
+  <summary> Week 1 : Day 2 - Introduction to ABI and Basic Verification Flow </summary>
+  <br>
+
 ### Simulate a C program using ABI function call (using registers) and execute
 ![DAy2_1](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/53ae4c51-715c-45ba-bc4e-46220b187f76)
 ![DAY2_2](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/700d7efe-a7b0-48a9-94fb-cd7200f3eef1)
 
+</details>
 
+<details>
+  <summary> Week 2 : Day 1 - Introduction to iVerilog, GTKwave and Yosys  </summary>
+  <br>
+  <details>
+    <summary>Iverilog gtkWave - I </summary>
+    <br>
+    
++ `cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files`
++ `iverilog good_mux.v tb_good_mux.v`
++ `./a.out`
++ ` gtkwave tb_good_mux.vcd`
+
+  ![iverilogGTKwave1](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/f8470f83-0c2f-4264-9d9f-81c9480e1357)
+
+  ![iverilogGTKwave1_2](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/ba25f023-c25b-4bc3-8092-a0af5f6fdf19)
+
+  </details>
+
+  <details>
+    <br>
+    <summary>Iverilog gtkWave - II</summary>
+    <br>
+    
+    To see The Contents of the files:
+
+    `gvim tb_good_mux.v -o good_mux.v`
+
+  ![iverilogGTK2](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/be036b5d-5a72-4870-ace5-379d0b580024)
+
+  </details>
+    <details>
+    <summary>Lab Experiments using Yosys</summary>
+    <br>
+      
+  +   To invoke **yosys**
+  -  `cd`
+  -  `cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files`
+  -   Type `yosys`
+     <br>
+  
+    ![yosys](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/86268c2a-a383-4acb-858d-156b391fc29f)
+
+
+  + ` read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
+  +  `read_verilog good_mux.v`
+  +  ` synth -top good_mux`
+
+    ![yosysgoodmux](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/e3be1520-d417-42f7-99fb-7a87db45dc29)
+
+  + To generate the netlist
+
+  `abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
+  
+  <img width="271" alt="yosysabc" src="https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/4418e9f7-a304-4516-983c-274dffb2ef6f">
+
+  + To see the logic realised
+   `show`
+
+  <img width="300" alt="yosysshow" src="https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/275e3fa4-cbf8-431f-bfb1-2767a666f319">
+
+  To write the netlist
+
+   - `write_verilog good_mux_netlist.v`
+   - `!gvim good_mux_netlist.v`
+
+  - To view a simplified code
+     
+     ` write_verilog -noattr good_mux_netlist.v`
+     
+     `!gvim good_mux_netlist.v`
+    
+<img width="224" alt="yosysreadnetlist" src="https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/4b0c12a1-f520-43bc-bcea-5df602a15373">
+
+
+![Screenshot from 2023-08-29 19-51-53](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/1836e204-2c6b-43a2-badc-46f8b14421a1)
+
+  <details/>
+
+<details/>  
 
