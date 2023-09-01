@@ -102,7 +102,8 @@ unsign_sign.c
   + To see the logic realised
    `show`
 
-  <img width="300" alt="yosysshow" src="https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/275e3fa4-cbf8-431f-bfb1-2767a666f319">
+![yosysshow](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/95910882-e37d-47d2-b5cb-8d72888ca375)
+
 
   To write the netlist
 
@@ -117,8 +118,8 @@ unsign_sign.c
     
 <img width="224" alt="yosysreadnetlist" src="https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/4b0c12a1-f520-43bc-bcea-5df602a15373">
 
+![YOSYSNETVIEW](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/c42e86b6-1eee-4b6f-ae43-5dc65f3338da)
 
-![Screenshot from 2023-08-29 19-51-53](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/1836e204-2c6b-43a2-badc-46f8b14421a1)
 
   <details/>
 
