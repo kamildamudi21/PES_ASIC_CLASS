@@ -93,7 +93,7 @@ CPU processes the contents of the memory and provides with output using iverilog
   -   Type `yosys`
      <br>
   
-    ![yosys](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/26170317-5171-4417-9d53-8fdd2adadf7f)
+   ![yosyshh](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/f2c25433-33d2-4aad-a3e1-6479a20a66c8)
 
 
 
