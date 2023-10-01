@@ -93,14 +93,16 @@ CPU processes the contents of the memory and provides with output using iverilog
   -   Type `yosys`
      <br>
   
-    ![yosys](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/86268c2a-a383-4acb-858d-156b391fc29f)
+    ![yosys](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/26170317-5171-4417-9d53-8fdd2adadf7f)
+
 
 
   + ` read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
   +  `read_verilog good_mux.v`
   +  ` synth -top good_mux`
 
-    ![yosysgoodmux](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/e3be1520-d417-42f7-99fb-7a87db45dc29)
+![goddmux](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/4365d2f3-0a62-4cf8-87aa-461813a6c148)
+
 
   + To generate the netlist
 
@@ -111,7 +113,7 @@ CPU processes the contents of the memory and provides with output using iverilog
   + To see the logic realised
    `show`
 
-![yosysshow](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/95910882-e37d-47d2-b5cb-8d72888ca375)
+![syn](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/31aa6ab2-d933-4971-a91e-9f7645748fff)
 
 
   To write the netlist
@@ -369,6 +371,10 @@ gtkwave tb_dff_const3.vcd
   abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
   show
 ```
+
+![counteropt](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/b14d90f0-0a6e-4e6a-9268-45dac480f327)
+
+
 </details>
 
 <details>
