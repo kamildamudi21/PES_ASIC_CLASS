@@ -92,8 +92,9 @@ CPU processes the contents of the memory and provides with output using iverilog
   -  `cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files`
   -   Type `yosys`
      <br>
+
   
-   ![yosyshh](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/f2c25433-33d2-4aad-a3e1-6479a20a66c8)
+![yosyshh](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/f2c25433-33d2-4aad-a3e1-6479a20a66c8)
 
 
 
