@@ -44,6 +44,21 @@ unsign_sign.c
 ![DAy2_1](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/53ae4c51-715c-45ba-bc4e-46220b187f76)
 ![DAY2_2](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/700d7efe-a7b0-48a9-94fb-cd7200f3eef1)
 
+
+### Further we will see how to run a C program on on RISC-V CPU
+
+- Input : C Program loaded into memory to RISC-V CPU in Hex format
+
+CPU processes the contents of the memory and provides with output using iverilog 
+
+- Risc-V CPU : ```Picorv32.v```
+- Testbench for verification : ```testbench.v```
+- Tool : ```iverilog```
+- script : ```rv32im.sh``` : has the commands to get the c-program, ALP, converts into hex format, loads into memory of riscv cpu, passes it iverilog and provides the output
+
+![picorv1](https://github.com/kamildamudi21/PES_ASIC_CLASS/assets/141449459/fa0081d4-9d47-4243-8bc9-d64b8bda8ecb)
+
+
 </details>
 
 # week 2
